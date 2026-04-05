@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title> ESTRUTURAS DE REPETIÇÃO - WILHE</title>
+        
+        
+            <script>
+
+        const qtd = prompt ('Digite o numero de repetições: ');
+                let nota =0;
+                let soma = 0;
+                for(let contador = 1; contador <= qtd; contador++){
+                    nota = Number(prompt('Digite a nota ' + contador + ' do aluno: '));
+                    soma = soma + nota;
+                    console.log('o contador é: ' + contador);
+            
+                }
+
+                const media = soma / qtd;
+                console.log('A soma das notas é: ' + soma);
+                console.log('A média das notas é: ' + media);
+            </script>
+
+
+        </head>
+            <body>
+            </body>
+
+    </html>

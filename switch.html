@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>ESTRUTURAS DE CONDIÇÃO</title>
+        <meta charset="utf-8" />
+        
+        <script>
+            /*
+            Verificar o aumento de salário de acordo com os seguintes cargos:
+            Estágiario : 100%
+            Analista : 50%
+            Gerente : 30%
+            Presidente : 10%            
+            */
+
+            const salario = 1000.56
+            const cargo = 'Presidente';
+            let aumento = 0;
+
+            switch(cargo) {
+                case'Estagiário':  aumento = 1.0; break;
+                case'Analista':    aumento = 0.5; break;
+                case'Gerente':     aumento = 0.3; break;
+                case'Presidente':  aumento = 0.1; break;
+                default:
+                    console.log("Cargo não encontrado");
+            }
+            const novoSalario = salario + (salario * aumento);
+            console.log("O novo salário é: " + novoSalario);
+
+
+        </script>
+    </head>
+</html>

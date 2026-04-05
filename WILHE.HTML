@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> ESTRUTURAS DE REPETIÇÃO - WILHE</title>
+     
+     
+     <script>
+        //A IDEIA É EXPOR EM LOG MUITOS NUMEROS POREM SEM REPETIR UM A UM.
+     
+    let contador = 1;
+        const qtd = prompt ('Digite o numero de matérias: ');
+        let soma = 0;
+        let nota= 0;
+
+    while (contador <= qtd) {
+
+        do{
+        nota = Number(prompt('Digite a nota ' + contador + ' do aluno: '));
+        }while (nota > 10 || nota < 0);
+        
+        soma = soma + nota;
+        contador = contador + 1;
+    }
+
+
+    const media = soma / qtd;
+    console.log('A soma das notas é: ' + soma);
+    console.log('A média do aluno é: ' + media);
+    
+    const resultado = media >= 6 ? 'Aprovado' : 'Reprovado';
+    console.log('O resultado do aluno é: ' + resultado);
+
+
+
+
+     </script>
+
+
+    </head>
+        <body>
+        </body>
+
+</html>

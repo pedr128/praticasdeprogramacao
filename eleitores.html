@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Eleitores</title>
+        <meta charset="UTF-8">
+       
+        <script> 
+
+           
+         const anovotacao = Number(prompt('digite o ano da eleição'));
+         const anonascimento = Number(prompt('digite o ano de nascimento'));
+
+
+
+            
+            const idade = anovotacao - anonascimento;
+
+           
+        if(idade < 16){
+         console.log('você não tem idade minima para votar ' + idade + ' anos');
+
+        } else if (idade >=16 && idade 18){
+            console.log('você tem idade para votar, mas o voto é opcional ' + idade + ' anos');
+
+        } else if (idade >= 18 && idade < 70){
+            console.log('você tem idade para votar e o voto é obrigatório ' + idade + ' anos');
+
+        } else if (idade >= 70){
+            console.log('você tem idade para votar, mas o voto é opcional ' + idade + ' anos');
+        }
+
+
+
+
+        
+
+
+
+        </script>
+
+
+
+
+    </head>
+
+
+<body>
+    
+</body>
+</html>

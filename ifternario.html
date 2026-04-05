@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>ESTRUTURAS DE CONDIÇÃO</title>
+        <meta charset="utf-8" />
+        
+        <script>
+            const n1 = Number(prompt("Digite número 1"));
+            const n2 = Number(prompt("Digite número 2"));   
+            const n3 = Number(prompt("Digite número 3"));
+            const n4 = Number(prompt("Digite número 4"));
+
+            const media = (n1 + n2 + n3 + n4) / 4;
+             console.log("A Média final é: " + media);
+/*
+            console.log("A Média final é: " + media);
+            if(media >= 7) {
+                console.log('aprovado');
+            } else {
+                console.log('reprovado');
+
+            }
+*/
+          //  media >= 7 ? console.log('aprovado') : console.log('reprovado'); 
+         //   media >= 7 if console.log('aprovado') else console.log('reprovado');
+    
+            let mensagem = media >= 7 ? 'aprovado' : 'reprovado';
+            console.log(mensagem);
+    
+    
+    </script>
+    </head>
+</html>
